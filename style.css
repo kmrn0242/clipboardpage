@@ -234,7 +234,7 @@ color: hsl(210, 10%, 33%);
 
 
 
-@media (max-width: 375px){
+@media screen and (max-width: 768px){
 
     body{
         font-size: 16px;
@@ -245,11 +245,22 @@ color: hsl(210, 10%, 33%);
         padding: 2rem 1.5rem;
         background-image: url(./bg-header-mobile.png);
         background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .logo{
         width: 100px;
-        margin-top: 60px;
+        margin-top: 50px;
+    }
+
+    .headings,
+    .ph1,
+    .ph2,
+    .ph3,
+    .ph4,
+    .plast,
+    .child{
+        text-align: center;
     }
 
     .ph1,
@@ -258,30 +269,31 @@ color: hsl(210, 10%, 33%);
     .ph4,
     .plast{
         max-width: 100%;
-        text-align: center;
         line-height: 1.7;
+        padding: 0 1rem;
     }
 
     .ios-mac{
         flex-direction: column;
         align-items: center;
         width: 100%;
+        gap: 1rem;
     }
 
     .ios,
     .mac{
-        width: 85%;
-        justify-content: center;
+        width: 90%;
+        max-width: 320px;
     }
 
     .snippets{
-        padding: 0 1.5rem;
+        padding: 0 1rem;
     }
 
     .snipcomp{
         flex-direction: column;
         gap: 4rem;
-        padding: 0 1.5rem;
+        padding: 0 1rem;
     }
 
     .computer{
@@ -292,11 +304,13 @@ color: hsl(210, 10%, 33%);
     .fp{
         align-items: center;
         text-align: center;
+        gap: 2rem;
     }
 
     .fc{
         align-items: center;
         text-align: center;
+        margin: 0;
     }
 
     .h{
@@ -305,13 +319,17 @@ color: hsl(210, 10%, 33%);
 
     .devices{
         width: 100%;
-        max-width: 320px;
+        max-width: 340px;
     }
 
     .supra{
         flex-direction: column;
         gap: 3rem;
-        padding: 0 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .jdm{
+        max-width: 100%;
     }
 
     .companies{
@@ -319,15 +337,20 @@ color: hsl(210, 10%, 33%);
         gap: 4rem;
     }
 
+    .companies img{
+        max-width: 140px;
+    }
+
     .clipboard{
-        padding: 0 1.5rem;
+        padding: 0 1rem;
     }
 
     footer{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: auto;
         padding: 3rem 1rem;
-        gap: 2rem;
         text-align: center;
     }
 
@@ -350,7 +373,7 @@ color: hsl(210, 10%, 33%);
     .r2{
         flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .r3{
